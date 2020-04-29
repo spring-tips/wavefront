@@ -179,52 +179,22 @@ Yep. That's it. IT's done. When the Spring Boot starter starts up, it negotiates
 
 Note that last uRL there for reference later on. But first, go to your browser and exercise some of the endpoints, [http://localhost:8080/reservations](http://localhost:8080/reservations) and [http://localhost:8080/hello](http://localhost:8080/hello). Invoke them both in the browser a half dozen times. 
 
-Now, go to that wavefront URL and you should see a dashboard with the data for your application. If you don't, then just wait a minute. IT takes a few minutes to see the data collected from yur application. Once your logged in you'll immediately see that Wavefront has captured metrics about your application at bth the application level - it knows, for example, about your HTTP requets, as well as at the JVM level, where it knows about things like your jVM's memory use. 
+Now, go to that wavefront URL and you should see a dashboard with the data for your application. If you don't, then just wait a minute. IT takes a few minutes to see the data collected from yur application. 
 
 
+You'll immediately see that Wavefront has captured metrics about your application at bth the application level - it knows, for example, about your HTTP requets, as well as at the JVM level, where it knows about things like your jVM's memory use. 
 
+<img src ="https://raw.githubusercontent.com/spring-tips/wavefront/master/assets/wavefront-metrics.png" />
 
+Click on one of those HTTP requests or go to Application > Traces and you'll be able to drill down into the traces for your application, like this. There is a _ton_ of information there, too. 
 
-## Postscript
+<img src ="https://raw.githubusercontent.com/spring-tips/wavefront/master/assets/wavefront-trace.png" />
 
-And now, here it is, your moment of zen: the _insane_ list of _other_ integrations for the rare sort not Spring Boot:
+Everything i've shown you thus far is jsut what gets prepared for you out of the box. the real power is in the customization and the integratins. You can created custom dashboards to show all sorts of informatino that matters to you. Graph useful business indicators. Use plots, time series, and more. And, once you've figured out what the right data to act on is, and figured out how to best contextualize data, then it's trivial to install inegrations to alert you when its time to act. 
+
+Speaking of integrations, I promised i'd show you some of the other integrations avaialble. So, here it is, your moment of zen: the _insane_ list of _other_ integrations for the rare sort not Spring Boot:
 
 <img src = "https://raw.githubusercontent.com/spring-tips/wavefront/master/assets/integrations.png"/>
 
 
-
-<!-- 
-* goto https://www.wavefront.com/sign-up/ to sign up 
-* https://longboard.wavefront.com/getstarted
-* OLD https://www.wavefront.com/how-to-instrument-and-monitor-your-springboot-2-application-on-kubernetes-using-wavefront/
-* https://www.wavefront.com/
-* git clone https://github.com/spring-projects/spring-petclinic/
-cd spring-petclinic
-git checkout wavefront
-mvn spring-boot:run
-* this is the commit that converted a non Wavefront-aware application to a Wavefront-aware application: https://github.com/spring-projects/spring-petclinic/commit/4fdd830c0b328f885df336e1c92c2997a22ee13f
-* https://wavefront.surf/tracing/service/details#_v01(g:(d:7200,ls:!t,s:1588067030,w:'2h'),p:(application:(v:spring-demos),service:(v:spring-petclinic)))
-
-You can 2.3.SNAPSHOT and <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
-
-* `wavefront.application.name=spring-tips`
-* `wavefront.application.service=reservations`
-
-https://spring.io/blog/2018/05/02/spring-tips-metrics-collection-in-spring-boot-2-with-micrometer
-https://spring.io/blog/2017/02/08/spring-tips-distributed-tracing-with-zipkin
-
-      <dependency>
-            <groupId>com.wavefront</groupId>
-            <artifactId>wavefront-spring-boot-starter</artifactId>
-            <version>2.0.0-SNAPSHOT</version>
-        </dependency>
-
-
-      <repository>
-            <id>sonatype-snapshots</id>
-            <name>Sonatype Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository> -->
+ 
