@@ -1,11 +1,9 @@
- # Spring Tips: Wavefront
-
-
-Hi, Spring fans! Welcome to another installment of Spring Tips! In this installment, we'll revisit two topics that we've addressed in two previous videos (distributed tracing and metrics collection) in terms of the unique [Wavefront product](https://www.wavefront.com/). 
+ 
+Hi, Spring fans! Welcome to another installment of Spring Tips! In this installment, we'll revisit two topics that we've addressed in two previous videos (distributed tracing and metrics collection) in terms of the superb Tanzu [Wavefront observability](https://www.wavefront.com/) platform. 
 
 The first video of the two videos, as mentioned above, dating way back in early 2017, looked at distributed tracing [with spring cloud sleuth and openzipkin](https://spring.io/blog/2017/02/08/spring-tips-distributed-tracing-with-zipkin). Spring Cloud Sleuth is an abstraction for capturing the flow of messages from one node to another. It's useful to help you see how messages move through a system. Spring cloud sleuth integrates with all the usual ingress and egress points in a Spring Boot application. Make an HTTP request using either the `Restteplat` or the reactive `WebClient` or Spring Cloud Feign? It works. Receive an HTTP request to a traditional (Servlet-based) or reactive HTTP endpoint built with Spring? It works. Send or receive a message using Spring Cloud Stream or Spring Integration? Yep. You guessed it. It just works. You don't have to do anything, either.
 
-Just add the Wavefront Spring Boot starter to the classpath, and Spring Cloud Sleuth does the rest. It can, in turn, forward the information that it captures to an out-of-band trace server like [OpenZipkin](https://zipkin.io/). Some even provide Zipkin-compatible proxies, like [Google Cloud StackDriver trace](https://cloud.google.com/trace/docs/zipkin). I like that last bit as it almost feels like we've gone full circle. Remember that Zipkin was inspired by, among other things, google 's dapper whitepaper. It's nice that we can, in turn, use Zipkin to talk to google cloud's tracing infrastructure. Distributed tracing is ideal when you want to drill down into the specifics of a single request into, or out of, the system.  
+Just add the Spring Cloud Sleuth starter to the classpath, and Spring Cloud Sleuth does the rest. It can, in turn, forward the information that it captures to an out-of-band trace server like [OpenZipkin](https://zipkin.io/). Some even provide Zipkin-compatible proxies, like [Google Cloud StackDriver trace](https://cloud.google.com/trace/docs/zipkin). I like that last bit as it almost feels like we've gone full circle. Remember that Zipkin was inspired by, among other things, google 's dapper whitepaper. It's nice that we can, in turn, use Zipkin to talk to google cloud's tracing infrastructure. Distributed tracing is ideal when you want to drill down into the specifics of a single request into, or out of, the system.  
 
 The second video from early 2018 looks at [collecting metrics with Micrometer](https://spring.io/blog/2018/05/02/spring-tips-metrics-collection-in-spring-boot-2-with-micrometer). 
 
@@ -198,5 +196,5 @@ Speaking of integrations, I promised I'd show you some of the other integrations
 
 <img src = "https://raw.githubusercontent.com/spring-tips/wavefront/master/assets/integrations.png"/>
 
-
+Still here? ...Why? Get! You've got places to be, production deploys to savor, growth to measure. Take what you've learned here today and integrate Wavefront into your application. If you're using [Tanzu Enterprise-ready Kubernetes Grid (Kubernetes)](https://tanzu.vmware.com/kubernetes-grid), [Tanzu Application Service (Cloud Foundry)](https://tanzu.vmware.com/application-service), or [Azure Spring Cloud](https://azure.microsoft.com/en-us/services/spring-cloud/), then this should be an especially tantalizing opportunity. Finally, an observability platform that can scale like your Spring Boot-based microservices do. So, go. Go try out Wavefront. Get to production, faster, and safer.
  
