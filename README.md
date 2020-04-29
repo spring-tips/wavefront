@@ -1,3 +1,9 @@
+# Spring Tips: The Wavefront Observability Platform
+
+speaker: [Josh Long (@starbuxman) ](http://twitter.com/starbuxman)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R8RAgTJvbEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
  
 Hi, Spring fans! Welcome to another installment of Spring Tips! In this installment, we'll revisit two topics that we've addressed in two previous videos (distributed tracing and metrics collection) in terms of the superb Tanzu [Wavefront observability](https://www.wavefront.com/) platform. 
 
