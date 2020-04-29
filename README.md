@@ -7,8 +7,9 @@ The first video of the aforementioned two videos, dating waaay back in early 201
 
 The second video, harking from early 2018, looks at [collecting metrics with micrometer](https://spring.io/blog/2018/05/02/spring-tips-metrics-collection-in-spring-boot-2-with-micrometer). [Micrometer](http://micrometer.io/) is an abstraction that captures metrics - statistics - about your application that can then be made available from the spring boot actuator `/actuator/metrics` endpoint or forwarded to a timeseris database like Wavefront. Micrometer can also talk to other time series databases like AppOptics, Azure Monitor, Netflix Atlas, CloudWatch, Datadog, Dynatrace, Elastic, Ganglia, Graphite, Humio, Influx/Telegraf, JMX, KairosDB, New Relic, Prometheus, SignalFx, Google Stackdriver, StatsD. Meyrics are useful when you want to capture statistics - aggregate numbers abou the frquency a gvien http endpoint is hit, or an http endpoint returns a particualr status code or responds to a particualr http verb. 
 
-That was a quick recap. For a more indepth look at both of these, i woudl refer you to the other Spring Tips videos. That's what they'r there for! The nice thing about Wavefront is that you wont interact with these project's APIs in this instalment because, as were about to see, the Wavefront Spring Boot interation _jsut works_. And thi sis no small surprise: the Spring Boot team worked hard on makign the Wavefront integration work seamlessly. Wavefront has other integrations for tons of ther platforms and integrations, too
+That was a quick recap. For a more indepth look at both of these, i woudl refer you to the other Spring Tips videos. That's what they'r there for! The nice thing about Wavefront is that you wont interact with these project's APIs in this instalment because, as were about to see, the Wavefront Spring Boot interation _jsut works_. And thi sis no small surprise: the Spring Boot team worked hard on makign the Wavefront integration work seamlessly. Wavefront has other integrations for tons of ther platforms and integrations, too.
 
+<img src = "assets/integrations.png"/>
 
 
 
