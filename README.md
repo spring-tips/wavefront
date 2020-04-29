@@ -9,7 +9,7 @@ The second video, harking from early 2018, looks at [collecting metrics with mic
 
 That was a quick recap. For a more indepth look at both of these, i woudl refer you to the other Spring Tips videos. That's what they'r there for! The nice thing about Wavefront is that you wont interact with these project's APIs in this instalment because, as were about to see, the Wavefront Spring Boot interation _jsut works_. And thi sis no small surprise: the Spring Boot team worked hard on makign the Wavefront integration work seamlessly. Wavefront has other integrations for tons of ther platforms and integrations, too.
 
-<img src = "assets/integrations.png"/>
+<img src = "https://raw.githubusercontent.com/spring-tips/wavefront/master/assets/integrations.png"/>
 
 
 
